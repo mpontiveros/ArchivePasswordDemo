@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+    <title>Archive w/ Password Demo</title>
+</head>
+<body>
+    <div id="container">
+		<h1>
+			<a href="../">zip.js</a> <span class="small"></span>
+		</h1>
+		<div class="description">
+			A JavaScript library to zip and unzip files
+			<hr>
+		</div>
+		<h2>Create a zip file (demo)</h2>
+		<ol id="demo-container">
+			<li>
+				<label>
+                    <span class="form-label">choose deflate implementation</span>
+                    We select "zip.js" as deflate implementation na lang.
+				</label>
+			</li>
+			<li>
+				<label>
+					<span class="form-label">set a password (optional)</span>
+					<input type="password" id="password-input" value="">
+				</label>
+			</li>
+			<li>
+				<label>
+					<span class="form-label">add files into the zip</span>
+					<button id="file-input-button">Add...</button>
+					<input type="file" multiple id="file-input" hidden>
+				</label>
+			</li>
+			<li>
+				<label>
+					<span class="form-label">view zip content</span>
+					<ul id="file-list" class="empty">
+					</ul>
+				</label>
+			</li>
+			<li>
+				<label>
+					<span class="form-label">set zip file name</span>
+					<input type="text" id="filename-input" value="Example.zip">
+				</label>
+			</li>
+			<li>
+				<label>
+					<span class="form-label">download the zip file</span>
+					<button id="download-button" disabled>Download</button>
+				</label>
+			</li>
+		</ol>
+
+	</div>
+    
+	<script type="text/javascript" src="scripts/zip.js/zip.min.js"></script>
+	<script type="text/javascript" src="scripts/own-code.js"></script>
+</body>
+</html>
