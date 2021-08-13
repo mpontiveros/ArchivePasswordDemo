@@ -61,7 +61,7 @@
 		}
 
 		function selectDeflateImplementation() {
-			const deflateImplementation = DEFLATE_IMPLEMENTATIONS[deflateImplementationInput.value];
+			const deflateImplementation = DEFLATE_IMPLEMENTATIONS["zip.js"];
 			zip.configure({ workerScripts: { deflate: deflateImplementation } });
 		}
 
